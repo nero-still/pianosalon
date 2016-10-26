@@ -1,15 +1,26 @@
-@import "../_common/colors_and_sizes.import.less";
+@import './utils.less';
 
 body {
     -webkit-font-smoothing: antialiased;
-    font-family: sourcesanspro-regular, sans-serif;
-    font-size:14px;
+    .font-s2;           
+    .type-light;
     height:100%;
     width:100%;
+    -moz-osx-font-smoothing: grayscale; // Firefox font render fix on OSX
+    background-color: white;
 }
 
 * {
     margin:0;
     padding:0;
     box-sizing: border-box;
+    // border: 1px solid red; // debugging
+}
+
+a {
+    color: @color-link;
+    .type-regular;
+    .font-s2;
+     text-decoration: none;
+    cursor: pointer;
 }

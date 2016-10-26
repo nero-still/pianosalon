@@ -1,29 +1,45 @@
 <template name='LayoutWithHeader'>
     <div class='page-layout with-compact-header'>
-    layout with header...
-<!--         <div class="header compact">
-            {{>yield 'header-color'}}
-
-            <div class='header-content'>
-                <ul class='breadcrumbs'>
-                    <li class='link-to-homepage'>
-                        {{#linkTo route='homepage'}}
-                        {{/linkTo}}
-                    </li>
-                    {{>yield 'breadcrumbs-with-title'}}
-                </ul>
-
-                <ul class="tools">
-                    {{>yield 'tools'}}
-                </ul>
-
-                <ul class="links">
-                    {{>yield 'links'}}
+        <div class="header banner">
+            <div class='empty'></div>
+            <div class='navigation-area'>
+                <a href=' ' class='logo' alt='Pianosalon Christophori'></a>
+                <ul class='nav-main'>
+                    <!-- {{>yield 'nav-main'}}         -->
+                    <li class='active'><a href=''>Willkommen</a></li>
+                    <li><a href=''>Tradition</a></li>
+                    <li><a href=''>Werkstatt</a></li>
+                    <li><a href=''>Konzerte</a></li>
+                    <li><a href=''>Mitschnitte</a></li>
+                    <li><a href=''>Kontakte</a></li>
                 </ul>
             </div>
         </div>
         <div class='page-content'>
             {{>yield}}
-        </div> -->
+            <div class='color-block general'> 
+                <div class='span-block logo-aligned'>
+                    <p>Der Piano Salon Christophori ist zum einen eine Werkstatt, in der Flügel, vor allem historische Hammerflügel, vorsichtig restauriert werden, zum anderen ein Ort, an dem sie gespielt werden.</p>
+                </div>
+            </div>
+            <div class='color-block concerts'>
+                <div class='teaser-image'></div>
+                <div class='color-block widget'>
+                    <div class='span-block widget-content'>
+                        <div class='day'>
+                            <p class='weekday'>Sonntag</p>
+                            <p class='date'>16.10.</p>
+                        </div>
+                        <div class='concert-title'>
+                            <p class='sub-title'>Olymp des Klavierspiels</p>
+                            <p class='title'>Yuri Martynov - Hammerflügel</p>
+                        </div>
+                    </div>
+                </div>
+                <div class='span-block logo-aligned'>
+                    <p>Da wir selbst begeisterte Spieler und Zuhörer sind und es lieben, wenn die von uns wieder zum Leben erweckten Instrumente von kundigen Händen zu klanglichen Höhen geführt werden, veranstalten wir im Abstand von 2-3 Wochen Kammermusikabende, die dem Gestus der Pariser Maison Erard oder der Salle Pleyel, also den Pianos Salons, welche den Fabriken angeschlossen waren und die von allen pianistischen Größen frequentiert wurden, verpflichtet sind.</p>
+                </div>
+            </div>
+        </div>
     </div>
 </template>

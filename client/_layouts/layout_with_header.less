@@ -1,0 +1,194 @@
+@import "/client/_common/common.less";
+// @import '/_common/utils.less';
+
+.page-layout.with-compact-header {
+    padding: 0;
+
+	.header.banner {
+		// position: fixed;
+		position:relative;
+		top: 0;
+		width: 100%;
+		max-height: 25vw;
+		min-height: 300px;
+		background: transparent url(images/header/header-home@2x.jpg) center center no-repeat;
+		background-size: cover;
+		background-position-x: 50%;
+		background-position-y: 50%;
+		
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-end;
+	
+		.empty {
+			flex-grow:1;
+		}
+
+		.navigation-area {
+			max-width: 960px;
+			margin-left: auto;
+			margin-right: auto;
+			// height: 300px;	
+			// display: flex; 
+
+			a.logo {
+				// display: none;
+				position: relative;
+			
+				&:before { // logo
+					position: absolute;
+					left:0.5em;
+					bottom:-67px;
+					// left:100px;
+					// top:30px;
+					z-index: 100;
+					content: ' ';
+					margin:0;
+					display: block;
+					min-width: 98px;
+					min-height: 125px;
+					// width: 7em; //14em;
+					// height: 8.9em; //17.86em;
+					max-width: 196px;
+					max-height: 250px;
+					background: transparent url(images/Logo@2x.png) center center no-repeat;
+					background-size: cover;
+				}
+			}
+
+			ul.nav-main {
+				bottom: 0;
+				height: 2em;
+				margin-left: 9.4em;
+				margin-right: 0em;
+				width: 809px;
+				list-style: none;
+
+				display: flex;
+				justify-content: flex-start;
+
+				li a {
+					padding: 0.5em 1em;
+					.type-light;
+					.font-s2;
+					letter-spacing: 0.023em;
+					text-transform: uppercase;
+					color: white;
+				}
+
+				li a:hover,				
+				li.active a {
+					.type-bold;
+					letter-spacing: -0.01em;
+					border-bottom: 1px solid white;
+				}
+			}
+		}
+	}
+	.page-content {
+	    margin:auto;
+	    box-sizing: border-box;
+	    position: relative;
+
+	    .color-block {
+	    	width: 100%;
+	    	margin-bottom: 2em;
+	    }
+
+	    .general {
+	    	.type-regular;
+	    	color: white;
+	    	background: @color-pianobeige;
+	    }
+
+	    .concerts {
+	    	// color: @color-text-beige;
+	    	background-color: @color-text-beige;
+
+	    	// background: @color-pianodark;
+	    	// background: @color-concertred;
+	    }
+
+	    .span-block {
+	    	max-width: 960px;
+			margin-left: auto;
+			margin-right: auto;
+			padding: 1em 0;
+
+	    	p {
+	    		.font-s3;
+	    	}
+
+		}
+
+		.widget {
+	    	// background: @color-concertred;
+	    	background-color: @color-pianodark;
+	    	margin-bottom: 0;			
+		}
+
+		.logo-aligned {
+			padding-left: 9.4em;
+		}
+
+	    .concerts {
+
+
+	    	.teaser-image {
+	    		position: relative;
+	    		content: ' ';
+				top: 0;
+				// width: 600px;
+				// height: 300px;
+				width: 100%;
+				max-height: 25vw;
+				min-height: 200px;
+				background: transparent url(images/header/header-concerts@2x.jpg) center center no-repeat;
+				background-size: cover;
+				background-position-x: 50%;
+				background-position-y: 50%; 
+	    	}
+		}
+
+	    .widget-content {
+	    	display: flex;
+
+		    .day {
+		    	line-height: 2.6em;
+		    	padding-right: 1em;
+				width: 9.4em;		    	
+		    	// color: @color-pianobeige;
+		    	color: @color-text-beige;
+		    	text-align: center;
+
+		    	.weekday {
+			    	.font-s2;
+			    	.type-regular;
+			    	text-transform: uppercase;
+		    	}
+
+		    	.date {
+		    		.font-m3;
+		    	}
+		    }
+
+		    .concert-title {
+		    	.type-concert;
+		    	color: @color-pianobeige;
+		    	// color: @color-text-beige;
+
+
+		    	.sub-title {
+		    		.font-s2;
+		    	}
+
+		    	.title {
+		    		.font-m2;
+		    	}
+
+		    }
+		}
+	}
+}
+
+
