@@ -1,110 +1,84 @@
 @import "/client/_common/common.less";
 
-.page-layout.with-compact-header {
-    padding: 0;
+.page-layout.with-compact-header .page-content {
 
-	.page-content {
-	    margin:auto;
-	    box-sizing: border-box;
-	    position: relative;
+    .color-block {
+    	width: 100%;
+    	margin-bottom: 2em;
+    }
 
-	    .color-block {
-	    	width: 100%;
-	    	margin-bottom: 2em;
+    .general {
+    	.type-regular;
+    	color: white;
+    	color: @color-pianodark;
+    	background: @color-pianobeige;
+    }
+
+    .concerts {
+    	// color: @color-text-beige;
+    	background-color: @color-text-beige;
+    	// background: @color-pianodark;
+    	// background: @color-concertred;
+    }
+
+	.widget {
+    	// background: @color-concertred;
+    	background-color: @color-pianodark;
+    	margin-bottom: 0;			
+	}
+
+    .concerts {
+
+    	.teaser-image {
+    		position: relative;
+    		content: ' ';
+			top: 0;
+			// width: 600px;
+			// height: 300px;
+			width: 100%;
+			max-height: 25vw;
+			min-height: 200px;
+			background: transparent url(images/header/header-concerts@2x.jpg) center center no-repeat;
+			background-size: cover;
+			background-position-x: 50%;
+			background-position-y: 50%; 
+    	}
+	}
+
+    .widget-content {
+    	display: flex;
+
+	    .day {
+	    	line-height: 2.6em;
+	    	padding-right: 1em;
+			width: 9.4em;		    	
+	    	// color: @color-pianobeige;
+	    	color: @color-text-beige;
+	    	text-align: center;
+
+	    	.weekday {
+		    	.font-s2;
+		    	.type-regular;
+		    	text-transform: uppercase;
+	    	}
+
+	    	.date {
+	    		.font-m3;
+	    	}
 	    }
 
-	    .general {
-	    	.type-regular;
-	    	color: white;
-	    	background: @color-pianobeige;
-	    }
-
-	    .concerts {
+	    .concert-title {
+	    	.type-concert;
+	    	color: @color-pianobeige;
 	    	// color: @color-text-beige;
-	    	background-color: @color-text-beige;
 
-	    	// background: @color-pianodark;
-	    	// background: @color-concertred;
+	    	.sub-title {
+	    		.font-s2;
+	    	}
+
+	    	.title {
+	    		.font-m2;
+	    	}
 	    }
-
-	    .span-block {
-	    	max-width: 960px;
-			margin-left: auto;
-			margin-right: auto;
-			padding: 1em 0;
-
-	    	p {
-	    		.font-s3;
-	    	}
-
-		}
-
-		.widget {
-	    	// background: @color-concertred;
-	    	background-color: @color-pianodark;
-	    	margin-bottom: 0;			
-		}
-
-		.logo-aligned {
-			padding-left: 9.4em;
-		}
-
-	    .concerts {
-
-
-	    	.teaser-image {
-	    		position: relative;
-	    		content: ' ';
-				top: 0;
-				// width: 600px;
-				// height: 300px;
-				width: 100%;
-				max-height: 25vw;
-				min-height: 200px;
-				background: transparent url(images/header/header-concerts@2x.jpg) center center no-repeat;
-				background-size: cover;
-				background-position-x: 50%;
-				background-position-y: 50%; 
-	    	}
-		}
-
-	    .widget-content {
-	    	display: flex;
-
-		    .day {
-		    	line-height: 2.6em;
-		    	padding-right: 1em;
-				width: 9.4em;		    	
-		    	// color: @color-pianobeige;
-		    	color: @color-text-beige;
-		    	text-align: center;
-
-		    	.weekday {
-			    	.font-s2;
-			    	.type-regular;
-			    	text-transform: uppercase;
-		    	}
-
-		    	.date {
-		    		.font-m3;
-		    	}
-		    }
-
-		    .concert-title {
-		    	.type-concert;
-		    	color: @color-pianobeige;
-		    	// color: @color-text-beige;
-
-
-		    	.sub-title {
-		    		.font-s2;
-		    	}
-
-		    	.title {
-		    		.font-m2;
-		    	}
-
-		    }
-		}
 	}
 }

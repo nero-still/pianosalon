@@ -1,5 +1,9 @@
 Router.route('/', {name:'homepage'});
+Router.route('/tradition', {name:'tradition'});
+Router.route('/workshop', {name:'workshop'});
 Router.route('/concerts', {name:'concerts'});
+Router.route('/recordings', {name:'recordings'});
+Router.route('/contact', {name:'contact'});
 
 Router.configure({
     layoutTemplate:   "LayoutWithHeader",
@@ -21,4 +25,4 @@ Router.configure({
 //     data: function () { return Items.findOne({_id: this.params._id}); }
 //   });
 // });
-       
+//        
