@@ -1,0 +1,49 @@
+@import "/client/_common/common.less";
+
+.page-layout.with-compact-header .page-content {
+
+	.color-block.reservation {
+
+		.first {
+			padding-top: 1.5em;
+		}
+
+		h2 {
+			color: @color-pianobeige;
+		}
+
+		p {
+			.font-s2
+		}
+
+		ul.reservation.steps {
+			margin-top: 1em;
+			list-style: none;
+			display: flex;
+			justify-content: space-between;
+
+			li {
+				max-width: 176px;
+				margin-right: 12px;
+				padding: 4px;
+				background-color: white;
+				text-align: center;
+
+				h3,
+				p {
+					color: @color-pianodark;
+				}
+
+				h3 {
+					color: @color-concertred;;
+					margin: 0.25em 0;
+				}
+
+				p {
+					.type-regular;
+					.font-s1;
+				}
+			}
+		}
+	}
+}

@@ -2,12 +2,14 @@
 
 body {
     -webkit-font-smoothing: antialiased;
-    .font-s2;           
+    // .font-s2;       
     .type-light;
     height:100%;
     width:100%;
     -moz-osx-font-smoothing: grayscale; // Firefox font render fix on OSX
-    background-color: white;
+    // background-color: white;
+    background-color: @color-tintedbeige;
+    color: @color-pianodark;
 }
 
 * {
@@ -23,4 +25,38 @@ a {
     .font-s2;
      text-decoration: none;
     cursor: pointer;
+}
+
+h1 {
+
+}
+
+h2 {
+    color: @color-pianobeige;
+    .type-extralight;
+    .font-m2;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+h3 {
+    .type-concert;
+    .font-m1;
+}
+
+p {
+    color: black;
+    // color: @color-pianodark;
+    .type-light;
+    .font-s2;
+}
+
+.columns-2 {
+    column-count: 2;
+    // column-gap: 3em;
+    column-gap: 12px;
+    
+    p {
+        // padding-bottom: 1.2em;
+    }
 }
