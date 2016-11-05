@@ -7,8 +7,8 @@ body {
     height:100%;
     width:100%;
     -moz-osx-font-smoothing: grayscale; // Firefox font render fix on OSX
-    // background-color: white;
-    background-color: @color-tintedbeige;
+    background-color: white;
+    // background-color: @color-tintedbeige;
     color: @color-pianodark;
 }
 
@@ -53,10 +53,46 @@ p {
 
 .columns-2 {
     column-count: 2;
-    // column-gap: 3em;
     column-gap: 12px;
     
     p {
         // padding-bottom: 1.2em;
+    }
+}
+
+.span-block.concert {
+    display: flex;
+
+    .day {
+        line-height: 2.6em;
+        padding-right: 1em;
+        width: 9.4em;               
+        // color: @color-pianobeige;
+        color: @color-text-beige;   
+        text-align: center;
+
+        .weekday {
+            .font-s2;
+            .type-regular;
+            text-transform: uppercase;
+        }
+
+        .date {
+            .font-m3;
+        }
+    }
+
+    .concert-title {
+        .type-concert;
+        color: @color-pianobeige;
+        // color: @color-text-beige;
+
+        .sub-title {
+            .font-s2;
+        }
+
+        .title {
+            .font-m2;
+        }
     }
 }
